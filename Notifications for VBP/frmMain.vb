@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class frmMain
     Dim LastMessages As New List(Of VBPMessage)
     Dim Login1 As New Login("", "")
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -16,9 +16,9 @@
             End If
         End If
         WebBrowser1.Navigate("https://www.vb-paradise.de/index.php/NotificationList/")
-        Timer1.Interval = My.Settings.Updateinterval * 60000
-        NumericUpDown1.Value = My.Settings.Updateinterval
-        Timer1.Start()
+        watch.Interval = My.Settings.Updateinterval * 60000
+        nUpDown.Value = My.Settings.Updateinterval
+        watch.Start()
         Me.Focus()
     End Sub
 
@@ -30,12 +30,12 @@
         End With
     End Sub
 
-    Private Sub MenuButton1_Click(sender As Object, e As EventArgs) Handles MenuButton1.Click
-        If Panel3.Visible Then
-            Panel3.Visible = False
+    Private Sub MenuButton1_Click(sender As Object, e As EventArgs) Handles btnMenu.Click
+        If pnlMain.Visible Then
+            pnlMain.Visible = False
         Else
-            Panel3.Visible = True
-            Panel3.BringToFront()
+            pnlMain.Visible = True
+            pnlMain.BringToFront()
         End If
     End Sub
 
@@ -43,8 +43,8 @@
         If WebBrowser1.DocumentText.Contains("Anmelden oder registrieren") Then
             MessageBox.Show("Sie müssen sich zuerst anmelden")
         Else
-            NfvbpBtn1.Quantity = CInt(WebBrowser1.Document.GetElementById("userNotifications").GetAttribute("data-count"))
-            NfvbpBtn3.Quantity = CInt(WebBrowser1.Document.GetElementById("unreadConversations").GetAttribute("data-count"))
+            btnNotifications.Quantity = CInt(WebBrowser1.Document.GetElementById("userNotifications").GetAttribute("data-count"))
+            btnConversations.Quantity = CInt(WebBrowser1.Document.GetElementById("unreadConversations").GetAttribute("data-count"))
             Dim AllMessagas As New List(Of VBPMessage)
             For Each HTMLE1 As HtmlElement In WebBrowser1.Document.GetElementsByTagName("ul")
                 If HTMLE1.GetAttribute("className") = "containerList" Then
@@ -76,11 +76,11 @@
                     Next
                 End If
             Next
-            Panel2.Controls.Clear()
+            pnlAll.Controls.Clear()
             Dim Message As String = ""
             For Each M As VBPMessage In AllMessagas
                 Dim NFVBPMessageControl1 As New NFVBPMessageControl With {.Message = M}
-                Panel2.Controls.Add(NFVBPMessageControl1)
+                pnlAll.Controls.Add(NFVBPMessageControl1)
                 NFVBPMessageControl1.Height = 70
                 If LastMessages IsNot Nothing Then
                     Dim Contains As Boolean = False
@@ -96,13 +96,13 @@
             Next
             LastMessages = AllMessagas
             If Message <> "" Then
-                NotifyIcon1.ShowBalloonTip(10000, "Notifications for VBP", Message, ToolTipIcon.None)
+                nfiMain.ShowBalloonTip(10000, "Notifications for VBP", Message, ToolTipIcon.None)
             End If
         End If
 
     End Sub
 
-    Private Sub NfvbpBtn1_Click(sender As Object, e As EventArgs) Handles NfvbpBtn1.Click
+    Private Sub NfvbpBtn1_Click(sender As Object, e As EventArgs) Handles btnNotifications.Click
         Try
             Process.Start("https://www.vb-paradise.de/index.php/NotificationList/")
         Catch ex As Exception
@@ -110,7 +110,7 @@
         End Try
     End Sub
 
-    Private Sub NfvbpBtn3_Click(sender As Object, e As EventArgs) Handles NfvbpBtn3.Click
+    Private Sub NfvbpBtn3_Click(sender As Object, e As EventArgs) Handles btnConversations.Click
         Try
             Process.Start("https://www.vb-paradise.de/index.php/ConversationList/")
         Catch ex As Exception
@@ -118,55 +118,52 @@
         End Try
     End Sub
 
-    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles watch.Tick
         WebBrowser1.Navigate("https://www.vb-paradise.de/index.php/NotificationList/")
     End Sub
 
-    Private Sub NumericUpDown1_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown1.ValueChanged
-        If Timer1.Enabled = True Then
-            My.Settings.Updateinterval = NumericUpDown1.Value
+    Private Sub NumericUpDown1_ValueChanged(sender As Object, e As EventArgs) Handles nUpDown.ValueChanged
+        If watch.Enabled = True Then
+            My.Settings.Updateinterval = nUpDown.Value
             My.Settings.Save()
-            Timer1.Interval = My.Settings.Updateinterval * 60000
+            watch.Interval = My.Settings.Updateinterval * 60000
         End If
     End Sub
 
-    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles linkKingTimon.LinkClicked
         Try
             Process.Start("https://www.vb-paradise.de/index.php/User/22536-KingTimon")
-        Catch ex As Exception
-
+        Catch
         End Try
     End Sub
 
-    Private Sub LinkLabel2_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel2.LinkClicked
+    Private Sub LinkLabel2_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles linkManuelSoftware.LinkClicked
         Try
             Process.Start("https://www.vb-paradise.de/index.php/User/18995-ManuelSoftware/")
-        Catch ex As Exception
-
+        Catch
         End Try
     End Sub
 
-    Private Sub LinkLabel3_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel3.LinkClicked
+    Private Sub LinkLabel3_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles linkVBP.LinkClicked
         Try
-            Process.Start("https://www.vb-paradise.de")
-        Catch ex As Exception
-
+            Process.Start("https://www.vb-paradise.de/")
+        Catch
         End Try
     End Sub
 
-    Private Sub NfvbpBtn5_Click(sender As Object, e As EventArgs) Handles NfvbpBtn5.Click
+    Private Sub NfvbpBtn5_Click(sender As Object, e As EventArgs) Handles btnExit.Click
         End
     End Sub
 
-    Private Sub NfvbpBtn4_Click(sender As Object, e As EventArgs) Handles NfvbpBtn4.Click
+    Private Sub NfvbpBtn4_Click(sender As Object, e As EventArgs) Handles btnMinimize.Click
         Me.Hide()
     End Sub
 
-    Private Sub NfvbpBtn2_Click(sender As Object, e As EventArgs) Handles NfvbpBtn2.Click
+    Private Sub NfvbpBtn2_Click(sender As Object, e As EventArgs) Handles btnRefresh.Click
         WebBrowser1.Navigate("https://www.vb-paradise.de/index.php/NotificationList/")
     End Sub
 
-    Private Sub NotifyIcon1_MouseClick(sender As Object, e As MouseEventArgs) Handles NotifyIcon1.MouseClick
+    Private Sub NotifyIcon1_MouseClick(sender As Object, e As MouseEventArgs) Handles nfiMain.MouseClick
         If Me.Visible = True Then
             Me.Hide()
         Else
@@ -176,14 +173,14 @@
 
     Private Sub Form1_VisibleChanged(sender As Object, e As EventArgs) Handles Me.VisibleChanged
         If Me.Visible = False Then
-            NotifyIcon1.ShowBalloonTip(10000, "Notifications for VBP", "Die Anwendung wurde in den Tray minimiert", ToolTipIcon.Info)
+            nfiMain.ShowBalloonTip(10000, "Notifications for VBP", "Die Anwendung wurde in den Tray minimiert", ToolTipIcon.Info)
         Else
-            Panel3.Visible = False
+            pnlMain.Visible = False
             Me.BringToFront()
         End If
     End Sub
 
-    Private Sub NotifyIcon1_BalloonTipClicked(sender As Object, e As EventArgs) Handles NotifyIcon1.BalloonTipClicked
+    Private Sub NotifyIcon1_BalloonTipClicked(sender As Object, e As EventArgs) Handles nfiMain.BalloonTipClicked
         If Me.Visible = True Then
             Me.Hide()
         Else
@@ -191,10 +188,14 @@
         End If
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Login1.Username = txt_username.Text
-        Login1.Password = txt_pwd.Text
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
+        Login1.Username = txtUsername.Text
+        Login1.Password = txtPassword.Text
         Login1.Refresh()
+    End Sub
+
+    Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs) Handles pnlMain.Paint
+
     End Sub
 End Class
 

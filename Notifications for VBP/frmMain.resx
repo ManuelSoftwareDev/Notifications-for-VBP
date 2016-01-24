@@ -117,17 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="ContextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="ctxMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="Timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="watch.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>174, 17</value>
   </metadata>
-  <metadata name="NotifyIcon1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="nfiMain.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>263, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="NotifyIcon1.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="nfiMain.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAUAAAAAAAEAIABXHgAAVgAAADAwAAABACAAqCUAAK0eAAAgIAAAAQAgAKgQAABVRAAAGBgAAAEA
         IACICQAA/VQAABAQAAABACAAaAQAAIVeAACJUE5HDQoaCgAAAA1JSERSAAABAAAAAQAIBgAAAFxyqGYA
@@ -554,7 +554,7 @@
         AAAAAAA=
 </value>
   </data>
-  <data name="NfvbpBtn5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnExit.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJMAAACTCAYAAACK5SsVAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAX
         EQAAFxEByibzPwAACO1JREFUeF7tm8uR3EYQBXmgWTSBRxkiQ+SDDOBBBiqC1ORstsShZmfxaQCvgcqI
@@ -598,7 +598,7 @@
         WqQGAW9Bv/pnEQj99Bfp06d/AE6zd8UCmitOAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="NfvbpBtn4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnMinimize.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALYAAAC2CAYAAAB08HcEAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAX
         EQAAFxEByibzPwAAA1lJREFUeF7t0rENgAAQAzH2XxqaNJFYIC+7vPqeFw4yNicZm5OMzUnG5qTfsR8Y
@@ -618,7 +618,7 @@
         xuYkY3OSsTnJ2JxkbE4yNicZm5OMzUnG5iRjc9D7fvHpb/pN21rPAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="NfvbpBtn2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnRefresh.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJ8AAACwCAYAAAAR4bwDAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAX
         EQAAFxEByibzPwAADABJREFUeF7tnT+oFtkZxi0sttjCQoiFECEWFhIsDFgIESJEggELIRYWBiwsLIRI

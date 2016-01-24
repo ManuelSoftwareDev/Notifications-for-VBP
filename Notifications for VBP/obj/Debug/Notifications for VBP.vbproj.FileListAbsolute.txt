@@ -20,3 +20,14 @@ C:\Users\thoma\Documents\Visual Studio 2015\Projects\Notifications for VBP\Notif
 C:\Users\thoma\Documents\Visual Studio 2015\Projects\Notifications for VBP\Notifications for VBP\obj\Debug\Notifications_for_VBP.Form1.resources
 C:\Users\thoma\Documents\Visual Studio 2015\Projects\Notifications for VBP\Notifications for VBP\obj\Debug\Notifications_for_VBP.Resources.resources
 C:\Users\thoma\Documents\Visual Studio 2015\Projects\Notifications for VBP\Notifications for VBP\obj\Debug\Notifications for VBP.vbproj.GenerateResource.Cache
+C:\Users\Manuel\Documents\GitHub\Notifications-for-VBP\Notifications for VBP\bin\Debug\Notifications for VBP.exe.config
+C:\Users\Manuel\Documents\GitHub\Notifications-for-VBP\Notifications for VBP\obj\Debug\Notifications for VBP.exe
+C:\Users\Manuel\Documents\GitHub\Notifications-for-VBP\Notifications for VBP\obj\Debug\Notifications for VBP.xml
+C:\Users\Manuel\Documents\GitHub\Notifications-for-VBP\Notifications for VBP\obj\Debug\Notifications for VBP.pdb
+C:\Users\Manuel\Documents\GitHub\Notifications-for-VBP\Notifications for VBP\bin\Debug\Notifications for VBP.exe
+C:\Users\Manuel\Documents\GitHub\Notifications-for-VBP\Notifications for VBP\bin\Debug\Notifications for VBP.pdb
+C:\Users\Manuel\Documents\GitHub\Notifications-for-VBP\Notifications for VBP\bin\Debug\Notifications for VBP.xml
+C:\Users\Manuel\Documents\GitHub\Notifications-for-VBP\Notifications for VBP\obj\Debug\Notifications for VBP.vbprojResolveAssemblyReference.cache
+C:\Users\Manuel\Documents\GitHub\Notifications-for-VBP\Notifications for VBP\obj\Debug\Notifications_for_VBP.frmMain.resources
+C:\Users\Manuel\Documents\GitHub\Notifications-for-VBP\Notifications for VBP\obj\Debug\Notifications_for_VBP.Resources.resources
+C:\Users\Manuel\Documents\GitHub\Notifications-for-VBP\Notifications for VBP\obj\Debug\Notifications for VBP.vbproj.GenerateResource.Cache

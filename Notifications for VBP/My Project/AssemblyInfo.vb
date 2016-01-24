@@ -8,11 +8,11 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("Notifications for VBP")>
-<Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("Notifications for VBP")>
-<Assembly: AssemblyCopyright("Copyright ©  2016")>
+<Assembly: AssemblyTitle("Notify für das VB-Paradise")> 
+<Assembly: AssemblyDescription("Die OpenSource Notification Extension für VB-Paradise")> 
+<Assembly: AssemblyCompany("KingTimon und ManuelSoftware")> 
+<Assembly: AssemblyProduct("Notifications für das VB-Paradise")> 
+<Assembly: AssemblyCopyright("Copyright © 2016 KingTimon und © 2013 - 2016 ManuelSoftware")> 
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.0.0")>
-<Assembly: AssemblyFileVersion("1.0.0.0")>
+<Assembly: AssemblyVersion("1.0.1.1")> 
+<Assembly: AssemblyFileVersion("1.0.1.1")> 
