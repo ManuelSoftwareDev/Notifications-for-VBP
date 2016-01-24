@@ -113,8 +113,7 @@
     Private Sub NfvbpBtn3_Click(sender As Object, e As EventArgs) Handles btnConversations.Click
         Try
             Process.Start("https://www.vb-paradise.de/index.php/ConversationList/")
-        Catch ex As Exception
-
+        Catch
         End Try
     End Sub
 
@@ -152,7 +151,7 @@
     End Sub
 
     Private Sub NfvbpBtn5_Click(sender As Object, e As EventArgs) Handles btnExit.Click
-        End
+        Application.Exit()
     End Sub
 
     Private Sub NfvbpBtn4_Click(sender As Object, e As EventArgs) Handles btnMinimize.Click
