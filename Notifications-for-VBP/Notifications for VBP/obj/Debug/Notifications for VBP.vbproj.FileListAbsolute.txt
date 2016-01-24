@@ -1,0 +1,22 @@
+C:\Users\thoma\AppData\Local\Temporary Projects\Notifications for VBP\bin\Debug\Notifications for VBP.exe.config
+C:\Users\thoma\AppData\Local\Temporary Projects\Notifications for VBP\bin\Debug\Notifications for VBP.exe
+C:\Users\thoma\AppData\Local\Temporary Projects\Notifications for VBP\bin\Debug\Notifications for VBP.pdb
+C:\Users\thoma\AppData\Local\Temporary Projects\Notifications for VBP\bin\Debug\Notifications for VBP.xml
+C:\Users\thoma\AppData\Local\Temporary Projects\Notifications for VBP\obj\Debug\Notifications_for_VBP.Form1.resources
+C:\Users\thoma\AppData\Local\Temporary Projects\Notifications for VBP\obj\Debug\Notifications_for_VBP.Resources.resources
+C:\Users\thoma\AppData\Local\Temporary Projects\Notifications for VBP\obj\Debug\Notifications for VBP.vbproj.GenerateResource.Cache
+C:\Users\thoma\AppData\Local\Temporary Projects\Notifications for VBP\obj\Debug\Notifications for VBP.exe
+C:\Users\thoma\AppData\Local\Temporary Projects\Notifications for VBP\obj\Debug\Notifications for VBP.xml
+C:\Users\thoma\AppData\Local\Temporary Projects\Notifications for VBP\obj\Debug\Notifications for VBP.pdb
+C:\Users\thoma\AppData\Local\Temporary Projects\Notifications for VBP\obj\Debug\Notifications for VBP.vbprojResolveAssemblyReference.cache
+C:\Users\thoma\Documents\Visual Studio 2015\Projects\Notifications for VBP\Notifications for VBP\bin\Debug\Notifications for VBP.exe.config
+C:\Users\thoma\Documents\Visual Studio 2015\Projects\Notifications for VBP\Notifications for VBP\obj\Debug\Notifications for VBP.exe
+C:\Users\thoma\Documents\Visual Studio 2015\Projects\Notifications for VBP\Notifications for VBP\obj\Debug\Notifications for VBP.xml
+C:\Users\thoma\Documents\Visual Studio 2015\Projects\Notifications for VBP\Notifications for VBP\obj\Debug\Notifications for VBP.pdb
+C:\Users\thoma\Documents\Visual Studio 2015\Projects\Notifications for VBP\Notifications for VBP\bin\Debug\Notifications for VBP.exe
+C:\Users\thoma\Documents\Visual Studio 2015\Projects\Notifications for VBP\Notifications for VBP\bin\Debug\Notifications for VBP.pdb
+C:\Users\thoma\Documents\Visual Studio 2015\Projects\Notifications for VBP\Notifications for VBP\bin\Debug\Notifications for VBP.xml
+C:\Users\thoma\Documents\Visual Studio 2015\Projects\Notifications for VBP\Notifications for VBP\obj\Debug\Notifications for VBP.vbprojResolveAssemblyReference.cache
+C:\Users\thoma\Documents\Visual Studio 2015\Projects\Notifications for VBP\Notifications for VBP\obj\Debug\Notifications_for_VBP.Form1.resources
+C:\Users\thoma\Documents\Visual Studio 2015\Projects\Notifications for VBP\Notifications for VBP\obj\Debug\Notifications_for_VBP.Resources.resources
+C:\Users\thoma\Documents\Visual Studio 2015\Projects\Notifications for VBP\Notifications for VBP\obj\Debug\Notifications for VBP.vbproj.GenerateResource.Cache
